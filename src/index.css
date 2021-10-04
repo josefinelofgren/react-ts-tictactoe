@@ -5,9 +5,146 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(85, 182, 145);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.App {
+  background-color:rgb(85, 182, 145);
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+
+.container-fluid {
+  width: 100%;
+  padding: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.game, .game-board {
+  margin: 0 auto;
+}
+
+.game-turn {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 20%;
+  margin-bottom: 50px;
+}
+
+.game-board {
+  display: none !important;
+}
+
+.game-board.is-active {
+  display: grid !important;
+}
+
+.game-board button {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700 !important;
+  font-size: 20px;
+  color: rgb(58, 58, 58);
+}
+
+.turn {
+
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.square-0, .square-1, .square-2 {
+  border-top: none !important;
+}
+
+.square-0, .square-3, .square-6 {
+  border-left: none !important;
+}
+
+.square-2, .square-5, .square-8 {
+  border-right: none !important;
+}
+
+.square-6, .square-7, .square-8 {
+  border-bottom: none !important;
+}
+
+.game-info {
+  height: 100px;
+  margin-bottom: 20px !important;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.game-info h1 {
+  font-size: 18px;
+}
+
+
+.game-info-grid {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 10%;
+}
+
+.player-info {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.player-info.winner {
+  border-bottom: 4px solid rgb(57, 126, 99);
+}
+
+
+.font {
+ font-family: 'Kanit', sans-serif;
+ font-weight: 700;
+ font-size: 20px;
+}
+
+.info-btn {
+  display: none;
+}
+
+.info-btn.is-active {
+  display: block;
 }
